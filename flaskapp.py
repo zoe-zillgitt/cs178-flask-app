@@ -18,7 +18,8 @@ def home():
 def add_user():
     if request.method == 'POST':
         # Extract form data
-        name = request.form['name']
+        firstname = request.form['first name']
+        lastname = request.form['last name']
         genre = request.form['genre']
         
         # Process the data (e.g., add it to a database)
